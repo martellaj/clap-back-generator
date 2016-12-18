@@ -9,6 +9,7 @@ input.addEventListener('change', clapBack);
 function clapBack() {
     if (!this.value.trim()) {
         output.textContent = '';
+        message.textContent = '';
         return;
     }
 
