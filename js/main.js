@@ -6,7 +6,7 @@ const message = document.querySelector('#message');
 
 // input.addEventListener('change', clapBack);
 input.addEventListener('change', function() {
-    output.textContent('foo');
+    output.textContent = 'foo';
 });
 
 function clapBack() {
