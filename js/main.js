@@ -4,12 +4,7 @@ const hiddenOutput = document.querySelector('#hiddenOutput');
 const output = document.querySelector('#output');
 const message = document.querySelector('#message');
 
-input.addEventListener('input', clapBack);
-input.addEventListener('input', foo);
-
-function foo() {
-    alert(this.value);
-}
+input.addEventListener('keyup', clapBack);
 
 function clapBack() {
     if (!this.value.trim()) {
