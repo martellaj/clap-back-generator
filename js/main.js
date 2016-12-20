@@ -5,6 +5,11 @@ const output = document.querySelector('#output');
 const message = document.querySelector('#message');
 
 input.addEventListener('input', clapBack);
+input.addEventListener('input', foo);
+
+function foo() {
+    alert(this.value);
+}
 
 function clapBack() {
     if (!this.value.trim()) {
