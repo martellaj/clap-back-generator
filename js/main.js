@@ -4,9 +4,11 @@ const hiddenOutput = document.querySelector('#hiddenOutput');
 const output = document.querySelector('#output');
 const message = document.querySelector('#message');
 
-input.addEventListener('input', clapBack);
+input.addEventListener('keyup', clapBack);
 
 function clapBack() {
+    console.log(input.value);
+
     if (!this.value.trim()) {
         output.textContent = '';
         message.textContent = '';
