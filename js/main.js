@@ -4,10 +4,7 @@ const hiddenOutput = document.querySelector('#hiddenOutput');
 const output = document.querySelector('#output');
 const message = document.querySelector('#message');
 
-// input.addEventListener('change', clapBack);
-input.addEventListener('change', function() {
-    output.textContent = 'foo';
-});
+input.addEventListener('change', clapBack);
 
 function clapBack() {
     if (!this.value.trim()) {
